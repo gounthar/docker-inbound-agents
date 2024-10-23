@@ -1,6 +1,6 @@
 FROM jenkins/inbound-agent:alpine as jnlp
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0-alpine
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine
 
 RUN apk -U add openjdk11-jre git openssh && \
     rm -rf /var/lib/apt/lists/* && \
