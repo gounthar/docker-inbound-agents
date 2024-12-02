@@ -1,6 +1,6 @@
 FROM jenkins/inbound-agent:alpine as jnlp
 
-FROM mcr.microsoft.com/dotnet/core/runtime:3.0-alpine
+FROM mcr.microsoft.com/dotnet/core/runtime:3.1.7-alpine
 
 RUN apk -U add openjdk11-jre
 
